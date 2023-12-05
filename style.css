@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  max-width: device-width;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(57, 57, 57, 0.312);
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  background-color: black;
+  color: aqua;
+  text-align: center;
+  text-decoration: underline;
+  padding: 20px;
+}
