@@ -9,9 +9,11 @@ var win = document.querySelector("#win");
 var winDeclare = document.querySelector("#declare");
 var resetButton = document.querySelector("#reset");
 var defDeclare = document.querySelector("#declare");
+var options = document.querySelector("#answer");
 
 var winCounter = 0;
 var loseCounter = 0;
+
 var questions = [
   "How much is 2+4:",
   "How much is 20-3:",
@@ -23,13 +25,21 @@ var answer1 = ["6", "3", "5", "2"];
 var answer2 = ["10", "9", "12", "17"];
 var answer3 = ["15", "13", "14", "18"];
 var answer4 = ["25", "21", "22", "3"];
+
 var rightanswers = ["6", "17", "15", "25"];
 
 function renderQuestions() {
-  var q = questions[Math.floor(Math.random * questions.length)];
-  ask.value = q;
-  return q;
+  var i = Math.floor(Math.random() * questions.length);
+  var issue = questions[i];
+
+  ask.textContent = issue;
+
+  for (var j = 0; j < 4; j++) {
+    options.textContent = answer[i];
+  }
+  console.log(ask);
 }
+
 function startGame() {
   isWin = false;
   timerCount = 5;
