@@ -53,7 +53,6 @@ aside {
   background-color: black;
   color: rgb(159, 226, 43);
   text-align: center;
-  text-decoration: underline;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -84,8 +83,33 @@ section {
 }
 #counter {
   font-size: 50px;
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  background-color: black;
+  color: rgb(159, 226, 43);
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 30%;
+  border: 5px;
+  border-style: groove;
+  box-shadow: 10px;
+  border-color: bisque;
 }
 #play {
   color: rgb(218, 189, 189);
+}
+#answer {
+  background-color: blue;
+  color: white;
+  font-size: 40px;
+  border-radius: 20px;
+  border-color: white;
+  border-width: 5px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 40;
 }
