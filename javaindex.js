@@ -20,7 +20,24 @@ var questions = [
   "How much is 3*5:",
   "How much is 50/2:",
 ];
-var answers = [answer1, answer2, answer3, answer4];
+var answers = [
+  "6",
+  "3",
+  "5",
+  "2",
+  "10",
+  "9",
+  "12",
+  "17",
+  "15",
+  "13",
+  "14",
+  "18",
+  "25",
+  "21",
+  "22",
+  "3",
+];
 var answer1 = ["6", "3", "5", "2"];
 var answer2 = ["10", "9", "12", "17"];
 var answer3 = ["15", "13", "14", "18"];
@@ -34,15 +51,21 @@ function renderQuestions() {
 
   ask.textContent = issue;
 
-  for (var j = 0; j < 4; j++) {
-    options.textContent = answer[i];
+  //program a loop to render options.
+  if ((i = 0)) {
+    for (var j = 0; j < 4; j++) {
+      var x = answers[j];
+      options.textContent = x;
+      console.log(options);
+    }
   }
+
   console.log(ask);
 }
 
 function startGame() {
   isWin = false;
-  timerCount = 5;
+  timerCount = 10;
   // Prevents start button from being clicked when round is in progress
   playbtn.disabled = true;
   renderQuestions();
@@ -93,11 +116,7 @@ function setWins() {
   win.textContent = winCounter;
   localStorage.setItem("winCount", winCounter);
 }
-//function Quiz() {
-//var problem = renderQuestions();
-//var xyz = document.querySelector("#play");
-//xyz.textContent = problem;
-//}
+
 playbtn.addEventListener("click", startGame);
 
 function resetGame() {
