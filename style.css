@@ -94,7 +94,10 @@ section {
 #play {
   color: rgb(225, 83, 83);
 }
-#answer {
+#answer1,
+#answer2,
+#answer3,
+#answer0 {
   background-color: blue;
   color: white;
   font-size: 40px;
@@ -104,6 +107,9 @@ section {
   display: flex;
   flex-direction: column;
   font-weight: 40;
+  justify-items: center;
+  margin-left: 150px;
+  margin-bottom: 25px;
 }
 #stats {
   display: flex;
