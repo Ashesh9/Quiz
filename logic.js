@@ -1,6 +1,5 @@
 var ask = document.querySelector("#play");
 var playbtn = document.querySelector("#Start");
-var q = document.querySelector("#play");
 var isWin = false;
 var timerElement = document.querySelector("#counter");
 var loseDeclare = document.querySelector("#declare");
@@ -98,6 +97,13 @@ function resetGame() {
   winCounter = 0;
   loseCounter = 0;
   defDeclare.textContent = "Good Luck";
+  ask.textContent = "Question:";
+  option0.textContent = "option";
+  option1.textContent = "option";
+  option2.textContent = "option";
+  option3.textContent = "option";
+  timerElement.textContent = 10;
+
   // Renders win and loss counts and sets them into client storage
   setWins();
   setLosses();
